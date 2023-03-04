@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Online Book Store</title>
+  <style>
+    /* Add some basic styling to the website */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+    nav {
+      background-color: #666;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+    nav ul li a:hover {
+      background-color: #fff;
+      color: #333;
+    }
+    .btn {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    #image-container {
+        position: relative;
+      }
+      #slide-btn {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #my-image3 {
+        display: none;
+      }
+
+      table {
+			margin-left: auto;
+			margin-right: auto;
+			width: 98%; /* Set table width to 100% of browser window */
+		}
+
+
+
+  </style>
+</head>
+<body>
+<table>
+   <tr>
+      <td>
+
+  <header>
+    <h1>My Online Book Store</h1>
+  </header>
+    
+  <nav>
+    <table>
+      <tr>
+        <th colspan="4">
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Book Categories.html">Books Categories</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+          </ul>
+        </th>
+      </tr>
+      <tr>
+        <td colspan="2" align="right" valign="bottom">
+          <div>
+            <form action="#" method="get">
+              <label for="search-term">Search:</label>
+              <input type="text" id="search-term" name="search-term">
+              
+              <label for="category">Category:</label>
+              <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="books">Fiction</option>
+                <option value="electronics">Sci-Fi</option>
+                <option value="clothing">Horror</option>
+              </select>
+              
+              <label for="price-range">Price Range:</label>
+              <select id="price-range" name="price-range">
+                <option value="all">All</option>
+                <option value="0-10">$0 - $10</option>
+                <option value="10-50">$10 - $50</option>
+                <option value="50-100">$50 - $100</option>
+              </select>
+              
+              <button type="submit">Search</button>
+              </form>
+          </div>
+        </td>
+        <td>
+          <div>
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="btn">Sign Up</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+   
+  </nav>
+
+    <h1>Welcome to Our About Us Page</h1>
+    <p>
+      <img src="/Images/great_gatsby_book.png" alt="Image 1" align="left" style="margin-right: 10px;">
+      Our company was founded in [insert year] with a mission to [insert mission statement]. We saw a need in the market for [insert problem/issue] and we wanted to be part of the solution. Since then, we have been working tirelessly to [insert how you are solving the problem/issue].
+    </p>
+    <br>
+    <h2>Our Team</h2>
+    <p>
+      <img src="/Images/great_gatsby_book.png"  alt="Image 2" align="right" style="margin-left: 10px;">
+      We are a team of passionate and dedicated professionals with diverse backgrounds and experiences. We are united by our shared values of [insert values] and our commitment to [insert mission statement]. Our team includes [insert number] employees who work across different departments, including [insert department names]. We believe in fostering a culture of collaboration, innovation, and continuous learning.
+    </p>
+    <br>
+    <h2>Our Products/Services</h2>
+    <p>
+      <img src="/Images/great_gatsby_book.png"  alt="Image 3" align="left" style="margin-right: 10px;">
+      We offer [insert products/services]. Our [insert product/service name] is designed to [insert product/service description]. We use state-of-the-art technology and the latest industry best practices to ensure that our products/services are of the highest quality. Our customers rely on us to [insert what your customers depend on you for].
+    </p>
+    <br>
+    <h2>Our Commitment</h2>
+    <p>
+      At [insert company name], we are committed to [insert commitment]. We believe that [insert belief statement]. We are dedicated to [insert what you are doing to fulfill your commitment]. We value our customers and we are committed to providing them with exceptional service and support.
+    </p>
+    <h2>Contact Us</h2>
+    <p>If you have any questions or comments, we would love to hear from you. You can reach us at [insert contact information].</p>
+ 
+
+
+
+    <br>
+    <br>
+    <br>
+    
+    <hr size="2">
+    
+      <footer align="center">
+        <table>
+            <tr>
+                <td>
+                    <nav>
+                        <ul style="margin-left: 450px;>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Books Categories</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        </ul>    
+                    </nav>
+    
+                </td>
+            </tr>
+                
+        </table>
+    <br>
+        <p>&copy; 2023 My Online Book Store. All rights reserved.</p>
+      </footer>
+    
+    
+    </td>
+    </tr>
+    </table> 
+    
+    </body>
+    </html>

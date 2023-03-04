@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Online Book Store</title>
+  <style>
+    /* Add some basic styling to the website */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+    nav {
+      background-color: #666;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+    nav ul li a:hover {
+      background-color: #fff;
+      color: #333;
+    }
+    .btn {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    #image-container {
+        position: relative;
+      }
+      #slide-btn {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #my-image3 {
+        display: none;
+      }
+
+      table {
+			margin-left: auto;
+			margin-right: auto;
+			width: 98%; /* Set table width to 100% of browser window */
+		}
+
+
+
+  </style>
+</head>
+<body>
+ <table>
+  <tr>
+    <td>
+  <header>
+    <h1>The Amazing Book Store</h1>
+  </header>
+
+  <nav>
+    <table>
+      <tr>
+        <th colspan="4">
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Book Categories.html">Books Categories</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+          </ul>
+        </th>
+      </tr>
+      <tr>
+        <td colspan="2" align="right" valign="bottom">
+          <div>
+            <form action="#" method="get">
+              <label for="search-term">Search:</label>
+              <input type="text" id="search-term" name="search-term">
+              
+              <label for="category">Category:</label>
+              <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="books">Fiction</option>
+                <option value="electronics">Sci-Fi</option>
+                <option value="clothing">Horror</option>
+              </select>
+              
+              <label for="price-range">Price Range:</label>
+              <select id="price-range" name="price-range">
+                <option value="all">All</option>
+                <option value="0-10">$0 - $10</option>
+                <option value="10-50">$10 - $50</option>
+                <option value="50-100">$50 - $100</option>
+              </select>
+              
+              <button type="submit">Search</button>
+              </form>
+          </div>
+        </td>
+        <td>
+          <div>
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="btn">Sign Up</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+   
+  </nav>
+
+
+  <main style="text-align: center;">
+    <h2>Welcome to the Amazing Book Store</h2>
+    <p>We offer a wide selection of books across multiple categories. Browse our collection and find your next favorite read.</p>
+  </main>
+
+  <h1 style="text-align: center;">BEST SELLERS AND HIGH RATING BOOKS!!!</h1>
+  </h1>
+
+
+  <table border="3" width="1500" height="300"align=center style="border-style: dotted; border-collapse: collapse;">
+    <thead >
+        <tr>
+            <th>Adventure</th>
+            <th>Sci-Fi</th>
+            <th>Romance</th>
+            <th>Documentary</th>
+            <th>Business</th>
+        </tr>
+    </thead>
+    <tbody style="text-align: center;" cellpadding="50">
+        <tr>
+            <td width="100">
+                <div class="book">
+                    <img src="/Images/book_cover1.png" alt="Book Cover" width="automatically height=automatically">
+                    <h2>The Great Gatsby</h2>
+                    <p>By F. Scott Fitzgerald</p>
+                    <p>Price: $10.99</p>
+                    <p>Rating: 4/5</p>
+                    <p>⭐⭐⭐⭐</p>
+                    <a href="">Preview</a>
+                  </div>
+            </td>
+            <td width="100">
+                <div class="book">
+                    <img src="/Images/book_cover2.png" alt="Book Cover">
+                    <h2>1984</h2>
+                    <p>By George Orwell</p>
+                    <p>Price: $9.99</p>
+                    <p>Rating: 4.5/5</p>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <a href="">Preview</a>
+                  </div>
+            </td>
+            <td width="100">
+                <div class="book">
+                    <img src="/Images/book_cover3.png" alt="Book Cover">
+                    <h2>Pride and Prejudice</h2>
+                    <p>By Jane Austen</p>
+                    <p>Price: $8.99</p>
+                    <p>Rating: 3/5</p>
+                    <p>⭐⭐⭐</p>
+                    <a href="">Preview</a>
+                  </div>
+            </td>
+            <td width="100">
+                <div class="cart">
+                    <img src="/Images/book_cover4.png" alt="Book Cover">
+                    <h2>Pride and Prejudice</h2>
+                    <p>By Jane Austen</p>
+                    <p>Price: $8.99</p>
+                    <p>Rating: 4/5</p>
+                    <p>⭐⭐⭐⭐</p>
+                    <a href="">Preview</a>
+                  </div>
+            </td>
+            <td width="100">
+                <div class="book">
+                    <img src="/Images/book_cover5.png" alt="Book Cover">
+                    <h2>Pride and Prejudice</h2>
+                    <p>By Jane Austen</p>
+                    <p>Price: $8.99</p>
+                    <p>Rating: 3/5</p>
+                    <p>⭐⭐⭐</p>
+                    <a href="">Preview</a>
+                  </div>
+            </td>
+
+        </tr>
+    </tbody>
+    <tfoot style="text-align: center;">
+        <tr>
+            <td style="border-style: none;"><a href="add to cart.html"><button>Add to Cart</a></button></td>
+            <td style="border-style: none;"><a href="add to cart.html"><button>Add to Cart</a></button></td>
+            <td style="border-style: none;"><a href="add to cart.html"><button>Add to Cart</a></button></td>
+            <td style="border-style: none;"><a href="add to cart.html"><button>Add to Cart</a></button></td>
+            <td style="border-style: none;"><a href="add to cart.html"><button>Add to Cart</a></button></td>
+        </tr>
+    </tfoot>
+
+
+
+  </table>
+<br>
+<br>
+<br>
+
+<hr size="2">
+
+  <footer align="center">
+    <table>
+        <tr>
+            <td>
+                <nav>
+                    <ul style="margin-left: 450px;>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Books Categories</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    </ul>    
+                </nav>
+
+            </td>
+        </tr>
+            
+    </table>
+<br>
+    <p>&copy; 2023 My Online Book Store. All rights reserved.</p>
+  </footer>
+
+
+</td>
+</tr>
+</table> 
+
+</body>
+</html>
