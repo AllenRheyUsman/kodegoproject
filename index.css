@@ -1,0 +1,41 @@
+.samplemodal{
+    background-color: aqua;
+    background-image: url(images/2521.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 200px;
+}
+.modal-content{
+    height: 700px;
+    width: 900px;
+    background-color:#F2BB8F;
+    background-image: url(images/bg1.png);
+    background-repeat: repeat;
+    background-size: 500px;
+
+}
+.modal-title{
+   align-items: center;
+   padding-left: 165px;
+  
+  
+}
+.modal-image{
+  
+
+}
+.modal-body{
+   /* background-image: url(images/bg1.png);
+  background-repeat: repeat;
+  background-size: 500px;
+   */
+    
+    
+    
+}
+.RandM {
+ 
+   
+    color: rgb(202, 202, 206);
+
+}
