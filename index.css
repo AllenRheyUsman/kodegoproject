@@ -1,9 +1,10 @@
 .samplemodal{
     background-color: aqua;
     background-image: url(images/2521.jpg);
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 300px;
-    width: 200px;
+    width: 300px;
 }
 .modal-content{
     height: 700px;

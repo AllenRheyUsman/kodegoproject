@@ -15,83 +15,136 @@
 
     <style>
 
-		.carousel-item.active,
-		.carousel-item-next,
-		.carousel-item-prev {
-			display: block;
-		}
-		.carousel-item {
-			display: none;
-			text-align: center;
-		}
-		.card {
-			margin: 0 auto;
-			width: 250px;
-			height: 300px;
-			background-color: #fff;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-		}
-		.card-body {
-			padding: 20px;
-		}
-		.card-img-top {
-			width: 200px;
-			height: 200px;
-			margin: 0 auto;
-			margin-top: 20px;
-		}
-		.primary-card {
-			width: 350px;
-			height: 420px;
-		}
+.carousel-container {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 100%;
+  margin-right: 10px;
+  scroll-snap-align: center;
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-button-prev {
+  left: 0;
+}
+
+.carousel-button-next {
+  right: 0;
+}
+
 	</style>
 </head>
 <body>
 
-	
+	<div class="carousel-container">
+		<div class="carousel-track">
+		  <div class="carousel-item">
+			<img src="images/2521.jpg" alt="carousel item 1">
+		  </div>
+		  <div class="carousel-item">
+			<img src="images/2521.jpg" alt="carousel item 2">
+		  </div>
+		  <div class="carousel-item">
+			<img src="images/2521.jpg" alt="carousel item 3">
+		  </div>
+		  <div class="carousel-item">
+			<img src="images/2521.jpg" alt="carousel item 4">
+		  </div>
+		  <div class="carousel-item">
+			<img src="images/2521.jpg" alt="carousel item 5">
+		  </div>
+		  <div class="carousel-item">
+			<img src="images/2521.jpg" alt="carousel item 6">
+		  </div>
+		  <div class="carousel-item">
+			<img src="images/2521.jpg" alt="carousel item 7">
+		  </div>
+		  <div class="carousel-item">
+			<img src="images/2521.jpg" alt="carousel item 8">
+		  </div>
+		</div>
+		<button class="carousel-button carousel-button-prev">&#8249;</button>
+		<button class="carousel-button carousel-button-next">&#8250;</button>
+	  </div>
+	  
 
   
-    <div class="container">
-		<h1>Bootstrap Carousel Example</h1>
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-				</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<div class="card primary-card">
-						<img class="card-img-top" src="https://via.placeholder.com/200x200" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Primary Card</h5>
-							<p class="card-text">This is the primary card in the carousel.</p>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="card">
-						<img class="card-img-top" src="https://via.placeholder.com/200x200" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card 1</h5>
-							<p class="card-text">This is the first card in the carousel.</p>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="card">
-						<img class="card-img-top" src="https://via.placeholder.com/200x200" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Card 2</h5>
-							<p class="card-text">This is the second card in the carousel.</p>
-						</div>
-					</div
+   
 
- 
+	  
+<script>
+	const track = document.querySelector('.carousel-track');
+const items = Array.from(track.children);
+const prevButton = document.querySelector('.carousel-button-prev');
+const nextButton = document.querySelector('.carousel-button-next');
+const itemWidth = items[0].getBoundingClientRect().width;
 
+// Set up the carousel
+const setCarousel = () => {
+  // Set the width of the carousel track
+  const trackWidth = itemWidth * items.length;
+  track.style.width = `${trackWidth}px`;
+
+  // Set the width of each carousel item
+  items.forEach(item => {
+    item.style.width = `${itemWidth}px`;
+  });
+
+  // Add event listeners to the buttons
+  prevButton.addEventListener('click', slidePrev);
+  nextButton.addEventListener('click', slideNext);
+};
+
+// Slide to the previous item
+const slidePrev = ()
+function slide(direction) {
+  if (direction === "next") {
+    currentSlide++;
+    if (currentSlide > totalSlides - 1) {
+      currentSlide = 0;
+    }
+  } else {
+    currentSlide--;
+    if (currentSlide < 0) {
+      currentSlide = totalSlides - 1;
+    }
+  }
+  let slideWidth = slideContainer.offsetWidth / slidesToShow;
+  let slideIndex = currentSlide * slidesToShow;
+  slideList.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+}
+
+
+</script>
 
 
                         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
