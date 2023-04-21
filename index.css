@@ -39,3 +39,19 @@
     color: rgb(202, 202, 206);
 
 }
+.head{
+    background-image: url(images/toonme.jpg);
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+   
+}
+body{
+    background-color:#f7b573;
+    background-image: url(images/bg2.png);
+    background-size: 80% ;
+    background-repeat: repeat;
+    background-position: center center;
+    height: 400px;
+}
