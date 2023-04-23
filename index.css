@@ -1,3 +1,12 @@
+.accordion-body{
+    font-size: 10px;
+}
+.tocart{
+    width: 200px;
+    height: 100px;
+}
+
+
 .samplemodal{
     
     background-image: url(images/2521.jpg);
