@@ -70,3 +70,47 @@ body{
 /* .collapse-horizontal {
     transition: height .5s ease;
   } */
+
+  /* animations */
+.running{
+    top: 200px;
+}
+  @keyframes move-right {
+    from {
+      transform: translateX(-500%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(350%);
+      opacity: 1;
+    }
+  }
+
+
+.pad{
+    animation: move-right 4s forwards;
+   
+    
+  }
+  /* pop-out */
+  @keyframes pop {
+    from {
+      transform: translateY(0%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(-65%);
+      opacity: 1;
+    }
+  }
+  .popout {
+    position: absolute;
+  left: 80%;
+    /* transform: translate(-50%, -50%); */
+    opacity: 0;
+    animation: pop .8s forwards;
+    animation-delay: 4s;
+   
+    width: 150px;
+    height: 150px;
+  }
