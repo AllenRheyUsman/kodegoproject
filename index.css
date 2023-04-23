@@ -189,20 +189,20 @@ body{
     animation-delay: 2.2s;
   }
 /* media queries */
-@media(max-width:750px){
-  header{
+@media(max-width:500px){
+  .head{
     margin-top: 0;
-    padding-top: 0;
-    border: none; 
-    height: 100px;
+    padding-top: 0; 
+    height: 200px;
+   
  }
  
 
   .chat{
     width: 80px;
-    height: 100px;
+    height: 85px;
    
-    top: 100px;
+    top: -10px;
   
     left: 120px;
     position: absolute;
@@ -215,9 +215,25 @@ body{
     height: 50px;
     padding-left: 30px;
     padding-top: 20px;
-    margin-top: 40px;
+    margin-top: -60px;
    
     
   }
-
+  .popout {
+  left: 76%;
+    width: 50px;
+    height: 60px;
+    margin-bottom: 80px;
+    margin-top: -120px;
+  }
+  .pad{
+    margin-left: 110px;
+    height: 70px;
+    width: 50px;
+   
+    margin-top: -120px;
+    
+   
+  }
+  
 }
