@@ -71,46 +71,153 @@ body{
     transition: height .5s ease;
   } */
 
-  /* animations */
+  /* animations on free shipping*/
 .running{
-    top: 200px;
+    top: 250px;
+
 }
   @keyframes move-right {
     from {
-      transform: translateX(-500%);
+      transform: translateY(100%);
       opacity: 0;
     }
     to {
-      transform: translateX(350%);
+      transform: translateY(0%);
       opacity: 1;
     }
   }
 
 
 .pad{
-    animation: move-right 4s forwards;
-   
+    animation: move-right 1s forwards;
+    height: 150px;
+    width: 150px;
+ 
     
   }
   /* pop-out */
   @keyframes pop {
     from {
-      transform: translateY(0%);
+      transform: translateY(-50%);
       opacity: 0;
     }
     to {
-      transform: translateY(-65%);
+      transform: translateY(-100%);
       opacity: 1;
     }
   }
+
   .popout {
     position: absolute;
-  left: 80%;
-    /* transform: translate(-50%, -50%); */
+  left: 76%;
+  
     opacity: 0;
     animation: pop .8s forwards;
-    animation-delay: 4s;
+    animation-delay: .7s;
    
     width: 150px;
     height: 150px;
   }
+  /* .poopout {
+    position: absolute;
+  left: 76%;
+  
+    opacity: 0;
+    animation: blink .8s ease-in-out infinite;
+    animation-delay: 1.5s;
+   
+    width: 150px;
+    height: 150px;
+    bottom: 130px;
+  } */
+
+
+
+/* 
+  animations customer service */
+
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+ 
+  }
+
+  .shine {
+    opacity: 0;
+    width: 350px;
+    height: 200px;
+    padding-left: 100px;
+    padding-top: 100px;
+   
+    animation: blink 1s ease-in-out forwards;
+    animation-delay: 2.2s;
+    
+  }
+  
+  .chat{
+    width: 150px;
+    height: 150px;
+    animation: ship .5s forwards;
+    animation-delay: 1.7s;
+    top: 200px;
+    bottom: -200px;
+    left: 300px;
+    position: absolute;
+    opacity: 0;
+  }
+  @keyframes ship {
+    from {
+      transform: translateX(60%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 1;
+    }
+  }
+  .neonlights{
+ 
+    animation: blink 1s ease-in-out infinite;
+    animation-delay: 2.2s;
+  }
+/* media queries */
+@media(max-width:750px){
+  header{
+    margin-top: 0;
+    padding-top: 0;
+    border: none; 
+    height: 100px;
+ }
+ 
+
+  .chat{
+    width: 80px;
+    height: 100px;
+   
+    top: 100px;
+  
+    left: 120px;
+    position: absolute;
+    opacity: 0;
+  }
+
+ .shine {
+    opacity: 0;
+    width: 110px;
+    height: 50px;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-top: 40px;
+   
+    
+  }
+
+}
