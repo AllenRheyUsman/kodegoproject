@@ -1,9 +1,39 @@
+.trans:hover {
+
+  transform: scale(1.1);
+
+  box-shadow: 0px 0px 20px rgba(19, 36, 26, 0.6);
+
+}
+.trans{
+  transition: transform 0.3s ease;
+ 
+  
+ 
+}
+.tran:hover {
+  transform: translateY(-10px);
+  
+
+}
+.tran{
+  transition: transform 0.3s ease;
+  
+}
+
+
+
+
 .accordion-body{
     font-size: 10px;
 }
 .tocart{
     width: 200px;
     height: 100px;
+}
+.footlong{
+  background-color: #292827;
+  color: rgb(222, 231, 240, .5);
 }
 
 

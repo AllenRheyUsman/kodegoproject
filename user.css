@@ -1,0 +1,19 @@
+.card {
+   
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-image: url(images/bg2.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: rgba(214, 9, 204, 0.5);
+
+  }
+  
+  .trans:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(19, 36, 26, 0.6);
+    overflow: hidden;
+    object-fit: fill;
+  }
+  .trans{
+    transition: transform 0.3s ease;
+  }
