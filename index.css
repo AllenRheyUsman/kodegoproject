@@ -42,15 +42,25 @@
 }
 
 
-.samplemodal{
-    
-    background-image: url(images/2521.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 300px;
-    border-style: none;
+.samplemodal {
+  background-image: url(images/2521.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(19, 36, 26, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
 }
+
+.samplemodal:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .modal-content{
     height: 700px;
     width: 900px;
@@ -110,6 +120,7 @@ body{
     width: 100%;
     height: 250px; 
     padding: 0;
+    
 }
 /* .collapse-horizontal {
     transition: height .5s ease;
@@ -131,7 +142,11 @@ body{
     }
   }
 
+#collapsepix{
+ height: 270px;
+ padding-left: 75px;
 
+}
 .pad{
     animation: move-right 1s forwards;
     height: 150px;
@@ -139,6 +154,8 @@ body{
  
     
   }
+
+
   /* pop-out */
   @keyframes pop {
     from {
