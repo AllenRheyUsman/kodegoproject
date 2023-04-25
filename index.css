@@ -27,9 +27,14 @@
 .accordion-body{
     font-size: 10px;
 }
-.tocart{
-    width: 200px;
-    height: 100px;
+/* .tocart{
+    width: 150px;
+    height: 80px;
+} */
+.tuna{
+  width: 150px;
+  height: 80px;
+ 
 }
 .footlong{
   background-color: #292827;
