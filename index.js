@@ -1,7 +1,12 @@
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
+// const myModal = document.getElementById('myModal')
+// const myInput = document.getElementById('myInput')
+const  fs=require("fs");
 
 
+
+
+
+        //  button anchor
 function toonIn() {
     window.location.href = "userpage.html";
   }

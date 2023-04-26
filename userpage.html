@@ -62,8 +62,8 @@
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
-                  <a href="#" class="card-link btn btn-primary trans">Check-out</a>
-                  <a href="#" class="card-link btn btn-primary trans">Add to cart</a>
+                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
                 </div>
               </div>
 
@@ -81,8 +81,8 @@
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
-                  <a href="#" class="card-link btn btn-primary trans">Check-out</a>
-                  <a href="#" class="card-link btn btn-primary trans">Add to cart</a>
+                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
                 </div>
               </div>
 
@@ -100,8 +100,8 @@
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
-                  <a href="#" class="card-link btn btn-primary trans">Check-out</a>
-                  <a href="#" class="card-link btn btn-primary trans">Add to cart</a>
+                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
                 </div>
               </div>
 
@@ -119,8 +119,8 @@
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
-                  <a href="#" class="card-link btn btn-primary trans">Check-out</a>
-                  <a href="#" class="card-link btn btn-primary trans">Add to cart</a>
+                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
                 </div>
               </div>
 
@@ -142,8 +142,8 @@
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
-                  <a href="#" class="card-link btn btn-primary trans">Check-out</a>
-                  <a href="#" class="card-link btn btn-primary trans">Add to cart</a>
+                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
                 </div>
               </div>
 
@@ -161,8 +161,8 @@
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
-                  <a href="#" class="card-link btn btn-primary trans">Check-out</a>
-                  <a href="#" class="card-link btn btn-primary trans">Add to cart</a>
+                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
                 </div>
               </div>
 
@@ -180,8 +180,8 @@
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
-                  <a href="#" class="card-link btn btn-primary trans">Check-out</a>
-                  <a href="#" class="card-link btn btn-primary trans">Add to cart</a>
+                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
                 </div>
               </div>
 
@@ -199,8 +199,8 @@
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
-                  <a href="#" class="card-link btn btn-primary trans">Check-out</a>
-                  <a href="#" class="card-link btn btn-primary trans">Add to cart</a>
+                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
+                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
                 </div>
               </div>
 
@@ -245,6 +245,212 @@
 
       
       
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+       
+          <div class=" modal-header">
+                                  
+           <div class="container-fluid">
+            
+              <div class="row justify-content-around">
+                <label for="disabledRange" class="col form-label text-start">Cart</label>
+                <label for="Information" class="col form-label text center">Information</label>
+                <label for="Payment" class="col form-label text-end">Payment</label>
+              </div>
+              <div class="row "> 
+                <input type="range" class="form-range" min="0." max="4" id="disabledRange" disabled>
+    
+               </div>
+           </div>
+
+           
+           
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           
+          </div>
+            
+    
+          <div class="modal-body">
+            
+            <form>
+              <div>
+                <label for="country">Country/Region:</label>
+                <select id="countryDropdown" name="country">
+                  <option value="USA">USA</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Mexico">Mexico</option>
+                  <!-- Add more options for other countries -->
+                </select>
+              </div>
+              <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+              <div>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+              </div>
+              <div>
+                <label for="postalCode">Postal Code:</label>
+                <input type="text" id="postalCode" name="postalCode" required>
+              </div>
+              <div>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+              </div>
+             
+            </form>
+            
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="submit" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Proceed to Payment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class=" modal-header">
+                                  
+            <div class="container-fluid">
+             
+               <div class="row justify-content-around">
+                 <label for="disabledRange" class="col form-label text-start">Cart</label>
+                 <label for="Information" class="col form-label text center">Information</label>
+                 <label for="Payment" class="col form-label text-end">Payment</label>
+               </div>
+               <div class="row "> 
+                 <input type="range" class="form-range" min="0." max="1" id="disabledRange" disabled>
+     
+                </div>
+            </div>
+ 
+            
+            
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+           </div>
+          <div class="modal-body">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+                    <div class="row g-3 align-items-center">
+                      <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">Password</label>
+                      </div>
+                      <div class="col-auto">
+                        <input type="password" id="inputPassword6" class="form-control" aria-labelledby="passwordHelpInline">
+                      </div>
+                      <div class="col-auto">
+                      
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Pay Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+                            <!-- add to cart card -->
+
+    <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class=" modal-header">
+                                  
+            <div class="container-fluid">
+             
+               <div class="row justify-content-around">
+                 <label for="disabledRange" class="col form-label text-start">Cart</label>
+                 <label for="Information" class="col form-label text center">Information</label>
+                 <label for="Payment" class="col form-label text-end">Payment</label>
+               </div>
+               <div class="row "> 
+                 <input type="range" class="form-range" min="0." max="0" id="disabledRange" disabled>
+     
+                </div>
+            </div>
+ 
+            
+            
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+           </div>
+          <div class="modal-body text-center">
+          <img src="images/2521.jpg" alt="">
+            <div class="text-center">
+              <button id="minus">-</button>
+              <input type="number" id="number" value="0" />
+              <button id="plus">+</button>
+            </div>
+
+        <div class="container-fluid">
+          <div class="row cart_item">
+            <div class="col text-end"><span class="amount">5</span></div>
+            <div class="col text-end"><div class="total ">Total: 0</div>
+          </div>
+
+        </div>
+              
+         
+              
+          </div>
+        
+          
+
+
+
+
+    
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
     
 

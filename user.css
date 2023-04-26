@@ -17,3 +17,68 @@
   .trans{
     transition: transform 0.3s ease;
   }
+.progress{
+  width: 10px;
+}
+
+
+input {
+  font-size: 24px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px gray;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  margin: 50px auto;
+}
+.pindotin{
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #444;
+  border: none;
+  box-shadow: 0 0 5px gray;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.positive {
+  background-color: #00c853;
+  color: #fff;
+}
+.negative {
+  background-color: #ff3d00;
+  color: #fff;
+}
+.cart_item {
+  font-size: 24px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.total {
+  font-size: 24px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px gray;
+  margin-top: 50px;
+}
