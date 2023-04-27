@@ -209,35 +209,7 @@ const countries = [
 
                                     // computation sa add to cart
   
- const minusBtn = document.getElementById("minus");
-const plusBtn = document.getElementById("plus");
-const numberInput = document.getElementById("number");
-const cartItems = document.querySelectorAll(".cart_item");
-
-function updateCart() {
-  let total = 0;
-  for (let i = 0; i < cartItems.length; i++) {
-    const amount = parseInt(cartItems[i].querySelector(".amount").textContent);
-    const subTotal = amount * numberInput.value;
-    cartItems[i].querySelector(".total").textContent = `Total: ${subTotal}`;
-    total += subTotal;
-  }
-  document.querySelector(".total").textContent = `Total: ${total}`;
-}
-
-minusBtn.addEventListener("click", () => {
-  if (numberInput.value > 0) {
-    numberInput.value--;
-    updateCart();
-  }
-});
-
-plusBtn.addEventListener("click", () => {
-  numberInput.value++;
-  updateCart();
-});
-
-numberInput.addEventListener("input", updateCart);
+ 
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -281,3 +253,36 @@ document.addEventListener("DOMContentLoaded", function() {
     generateNewDiv.addEventListener("click", handleClick);
   });
 });
+
+
+
+
+const submitBtn = document.getElementById('submit-form-btn');
+        const form = document.querySelector('.needs-validation');
+
+        // Get the modal instance with chatgpt help
+        const targetModalId = submitBtn.getAttribute('data-bs-target');
+        const targetModal = new bootstrap.Modal(document.getElementById(targetModalId.slice(1)));
+        const previousModalId = 'exampleModalToggle';
+        const previousModal = new bootstrap.Modal(document.getElementById(previousModalId));
+
+        // Disable default Bootstrap modal opening behavior
+        submitBtn.removeAttribute('data-bs-toggle');
+
+        submitBtn.addEventListener('click', function (event) {
+            // Validate the form
+            if (form.checkValidity() === false) {
+                event.stopPropagation();
+                form.classList.add('was-validated');
+                return;
+            }
+            // If the form is valid, show the modal with chat gpt help
+            targetModal.show();
+            previousModal.hide();
+        });
+
+
+
+        function navigateToIndex() {
+          window.location.href = 'index.html';
+      }
