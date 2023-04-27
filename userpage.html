@@ -12,58 +12,103 @@
     <link rel="stylesheet" href="user.css" type="text/css">
   </head>
   <body>
-<header>
-        <div class="container-fluid ">
-          <div class=" row px-3 justify-content-around footlong" >
-           
-                <div class="col text-start">
-                
-                  <p>fdsfdsfdsf</p>
-                  <p>afdfdfaf</p>
-                  <p>dfdsfdsfdfs</p>
-                      
-                </div>
-                <div class="col text-center">
-                
-                  <p>fdsfdsfdsf</p>
-                  <p>afdfdfaf</p>
-                  <p>dfdsfdsfdfs</p>
-                      
-                </div>
-    
-                <div class="col text-end">
-                
-                  <p>fdsfdsfdsf</p>
-                  <p>afdfdfaf</p>
-                  <p>dfdsfdsfdfs</p>
-                      
-                </div>
-  
+    <header class="row">
+
+      <div class="col col-4 text-start">
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"   tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                      <div class="row text-center">
+                          <h1>CART</h1>
+                      </div>
+
+                      <div class="offcanvas-header">
+                          
+                              <div class="row">
+                                  <div class="col col-6 text-end"> <h5 class="offcanvas-title" id="offcanvasScrollingLabel">user</h5></div>
+                              </div>
+                              <div class="col col-6 text-end"> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                              </div>
+                      </div>
+                      <div class="offcanvas-body">       
+                          <div class="row" id="insertNewDivHere">
+                          </div>
+                      </div>  
+                      <div class="offcanvas-footer mb-5 pb-5 text-center">
+                          <hr>
+                      <div class="row">
+                          <div class="col col-6 text-start">Customized Cartoon</div>
+                          <div class="col col-6 text-end" >  <h3>Total: <span id="sumDisplay">0.00</span></h3></div>
+                          <hr>
+
+                      </div>
+
+                      </div>  
+                      <div class="row">
+                         <div class="col col-6"></div>
+                         <div class="col col-6 text-end"> <button type="button" class="btn btn-primary btn-md">Check Out</button></div>
+
+                      </div>
           </div>
+      </div>
 
-            
-        </div>
-    
 
-</header>
+
+  <div class="row col-4">
+      <div class="col col-2 ">
+          <a class="nav-link active" aria-current="page" href="#">25</a>
+      </div>
+      <div class="col col-2" >
+          <a class="nav-link active" aria-current="page" href="#">50</a>
+      </div>
+      <div class="col col-2">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </div>
+      <div class="col col-2">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </div>
+      <div class="col col-2">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </div>
+      <div class="col col-2">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </div>
+  </div>
+  <div class="col col-4 text-end">
+
+     
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img src="" alt="Cart"></button>
+  </div>
+
+  
+ 
+
+
+
+
+
+ </header>
+
+
 <main class="container-fluid">
     <div class="row mx-5 my-5">
 
         <div class="col col-sm-6 col-md-4 col-lg-3">
             <div class="card trans" style="width: 18rem;">
                 <img src="images/2521.jpg" class="card-img-top trans" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Forest-Custom Mug</h5>
-                  <p class="card-text">Made from porcelain echus eme</p>
+                <div class="card-body" style="height: 100px;">
+                  <h5 class="card-title">Custom Water Bottle</h5>
+                  <p class="card-text">This water bottle is made from high-quality stainless steel, keeping your drink cold or hot for hours on end.</p>
                 </div>
                 <ul class="list-group  list-group-flush">
                   <li class="list-group-item card trans">⭐⭐⭐⭐⭐</li>
-                  <li class="list-group-item card trans" id="getPrice">$39.95$</li>
+                  <li class="list-group-item card trans p_list">39.95</li>
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
-                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal" id="generateNewDiv">Add to Cart</button>
+                   
+                   <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add Item</button>
+
+                
                 </div>
               </div>
 
@@ -71,18 +116,18 @@
         <div class="col col-sm-6 col-md-4 col-lg-3">
             <div class="card trans" style="width: 18rem;">
                 <img src="images/2521.jpg" class="card-img-top trans" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Forest-Custom Mug</h5>
-                  <p class="card-text">Made from porcelain echus eme</p>
+                <div class="card-body" style="height: 100px;">
+                  <h5 class="card-title">Custom Short Sleeved T-shirt</h5>
+                  <p class="card-text">Made from high-quality cotton with a comfortable fit and durable construction, this t-shirt is perfect for everyday wear and features a stylish design that will make you stand out.</p>
                 </div>
                 <ul class="list-group  list-group-flush">
                   <li class="list-group-item card trans">⭐⭐⭐⭐⭐</li>
-                  <li class="list-group-item card trans">$39.95$</li>
+                  <li class="list-group-item card trans p_list">$55.95</li>
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
-                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
+                      <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add to Cart</button>
                 </div>
               </div>
 
@@ -90,18 +135,18 @@
         <div class="col col-sm-6 col-md-4 col-lg-3">
             <div class="card trans" style="width: 18rem;">
                 <img src="images/2521.jpg" class="card-img-top trans" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Forest-Custom Mug</h5>
-                  <p class="card-text">Made from porcelain echus eme</p>
+                <div class="card-body" style="height: 100px;">
+                  <h5 class="card-title">Custom Coffee Mug</h5>
+                  <p class="card-text">Crafted from high-quality ceramic, this mug is both stylish and practical, with a comfortable grip and ample capacity for your favorite hot or cold beverage.</p>
                 </div>
                 <ul class="list-group  list-group-flush">
                   <li class="list-group-item card trans">⭐⭐⭐⭐⭐</li>
-                  <li class="list-group-item card trans">$39.95$</li>
+                  <li class="list-group-item card trans p_list">$65.3</li>
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
-                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
+                      <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add to Cart</button>
                 </div>
               </div>
 
@@ -109,18 +154,18 @@
         <div class="col col-sm-6 col-md-4 col-lg-3">
             <div class="card trans" style="width: 18rem;">
                 <img src="images/2521.jpg" class="card-img-top trans" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Forest-Custom Mug</h5>
-                  <p class="card-text">Made from porcelain echus eme</p>
+                <div class="card-body" style="height: 100px;">
+                  <h5 class="card-title">Premium Portrait on Canvas</h5>
+                  <p class="card-text">Made from premium materials and built to last, this canvas is perfect for displaying your favorite artwork, with a smooth surface and vibrant colors that will make your piece pop.</p>
                 </div>
                 <ul class="list-group  list-group-flush">
                   <li class="list-group-item card trans">⭐⭐⭐⭐⭐</li>
-                  <li class="list-group-item card trans">$39.95$</li>
+                  <li class="list-group-item card trans p_list">$92.5</li>
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
-                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
+                      <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add to Cart</button>
                 </div>
               </div>
 
@@ -132,18 +177,18 @@
         <div class="col col-sm-6 col-md-4 col-lg-3">
             <div class="card trans" style="width: 18rem;">
                 <img src="images/2521.jpg" class="card-img-top trans" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Forest-Custom Mug</h5>
-                  <p class="card-text">Made from porcelain echus eme</p>
+                <div class="card-body" style="height: 100px;">
+                  <h5 class="card-title">Custom Phone Case</h5>
+                  <p class="card-text">Designed to protect your mobile device from scratches, drops, and other everyday hazards, this phone case is made from high-quality materials and features a sleek and stylish design that won't weigh you down.</p>
                 </div>
                 <ul class="list-group  list-group-flush">
                   <li class="list-group-item card trans">⭐⭐⭐⭐⭐</li>
-                  <li class="list-group-item card trans">$39.95$</li>
+                  <li class="list-group-item card trans p_list">$50</li>
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
-                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
+                      <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add to Cart</button>
                 </div>
               </div>
 
@@ -151,18 +196,18 @@
         <div class="col col-sm-6 col-md-4 col-lg-3">
             <div class="card trans" style="width: 18rem;">
                 <img src="images/2521.jpg" class="card-img-top trans" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Forest-Custom Mug</h5>
-                  <p class="card-text">Made from porcelain echus eme</p>
+                <div class="card-body" style="height: 100px;">
+                  <h5 class="card-title">Custom Long Sleeved Hoodie</h5>
+                  <p class="card-text">Crafted from soft and warm materials with a comfortable fit, this hoodie is perfect for layering and will keep you cozy and stylish all season long.</p>
                 </div>
                 <ul class="list-group  list-group-flush">
                   <li class="list-group-item card trans">⭐⭐⭐⭐⭐</li>
-                  <li class="list-group-item card trans">$39.95$</li>
+                  <li class="list-group-item card trans p_list">$50</li>
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
-                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
+                      <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add to Cart</button>
                 </div>
               </div>
 
@@ -170,18 +215,18 @@
         <div class="col col-sm-6 col-md-4 col-lg-3">
             <div class="card trans" style="width: 18rem;">
                 <img src="images/2521.jpg" class="card-img-top trans" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Forest-Custom Mug</h5>
-                  <p class="card-text">Made from porcelain echus eme</p>
+                <div class="card-body" style="height: 100px;">
+                  <h5 class="card-title">Premium Cotton Silk Blanket</h5>
+                  <p class="card-text"> Made from plush and luxurious materials with a soft and silky feel, this blanket is perfect for snuggling up on the couch or staying warm on a chilly night.</p>
                 </div>
                 <ul class="list-group  list-group-flush">
                   <li class="list-group-item card trans">⭐⭐⭐⭐⭐</li>
-                  <li class="list-group-item card trans">$39.95$</li>
+                  <li class="list-group-item card trans p_list">$50</li>
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
-                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
+                      <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add to Cart</button>
                 </div>
               </div>
 
@@ -189,18 +234,18 @@
         <div class="col col-sm-6 col-md-4 col-lg-3">
             <div class="card trans" style="width: 18rem;">
                 <img src="images/2521.jpg" class="card-img-top trans" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Forest-Custom Mug</h5>
-                  <p class="card-text">Made from porcelain echus eme</p>
+                <div class="card-body" style="height: 100px;">
+                  <h5 class="card-title">Digital Portrait</h5>
+                  <p class="card-text"> Created by skilled artists using state-of-the-art technology and high-quality materials, this digital portrait is a unique and timeless way to capture a special moment or memory that will last a lifetime.</p>
                 </div>
                 <ul class="list-group  list-group-flush">
                   <li class="list-group-item card trans">⭐⭐⭐⭐⭐</li>
-                  <li class="list-group-item card trans">$39.95$</li>
+                  <li class="list-group-item card trans p_list">$50</li>
                  
                 </ul>
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
-                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal">Add to Cart</button>
+                       <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add to Cart</button>
                 </div>
               </div>
 

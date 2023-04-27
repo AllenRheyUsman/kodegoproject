@@ -238,3 +238,46 @@ plusBtn.addEventListener("click", () => {
 });
 
 numberInput.addEventListener("input", updateCart);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  let generateNewDivs = document.querySelectorAll(".generateNewDiv");
+  let insertNewDivHere = document.getElementById("insertNewDivHere");
+  let sumDisplay = document.getElementById("sumDisplay");
+  let currentSum = 0;
+
+    // function to add all the price in the cart items
+
+    
+  function updateTotalSum(price) {
+    currentSum += price;
+    sumDisplay.textContent = `$${currentSum.toFixed(2)}`;
+  }
+
+  function handleClick(event) {
+    event.preventDefault();
+    
+    let price = parseFloat(event.target.closest('.card').querySelector('.p_list').textContent.replace('$',''));
+
+    // let price = parseFloat(event.target.textContent);
+    let displayPrice = !isNaN(price) && price >= 0 ? `${price.toFixed(2)}` : "0.00";
+
+    let newRow = document.createElement("div");
+    newRow.classList.add("row");
+    newRow.innerHTML = `
+      <div class="col col-6"><img src="" alt="affffa"></div>
+      <div class="col col-6">
+        <div class="input-group">
+          <span class="input-group-text">$</span>
+          <span class="input-group-text">${displayPrice}</span>
+        </div>
+      </div>
+    `;
+    insertNewDivHere.appendChild(newRow);
+    updateTotalSum(price);
+  }
+
+  generateNewDivs.forEach(function(generateNewDiv) {
+    generateNewDiv.addEventListener("click", handleClick);
+  });
+});
