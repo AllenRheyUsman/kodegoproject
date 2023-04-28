@@ -224,12 +224,13 @@ document.addEventListener("DOMContentLoaded", function() {
   function updateTotalSum(price) {
     currentSum += price;
     sumDisplay.textContent = `$${currentSum.toFixed(2)}`;
+    
   }
 
   function handleClick(event) {
     event.preventDefault();
     
-    let price = parseFloat(event.target.closest('.card').querySelector('.p_list').textContent.replace('$',''));
+    const price = parseFloat(event.target.closest('.card').querySelector('.p_list').textContent.replace('$',''));
 
     // let price = parseFloat(event.target.textContent);
     let displayPrice = !isNaN(price) && price >= 0 ? `${price.toFixed(2)}` : "0.00";
@@ -253,6 +254,15 @@ document.addEventListener("DOMContentLoaded", function() {
     generateNewDiv.addEventListener("click", handleClick);
   });
 });
+
+
+
+  function updateTotalSum(price) {
+    currentSum += price;
+    sumDisplay.textContent = `$${currentSum.toFixed(2)}`;
+    updateGrandTotal();
+  }
+
 
 
 
@@ -281,8 +291,23 @@ const submitBtn = document.getElementById('submit-form-btn');
             previousModal.hide();
         });
 
+  
 
+          // Get elements
+  const sumDisplay = document.querySelector(".amount");
+  const subTotal = document.getElementById("subTotal");
+  const granTotal = document.getElementById("granTotal");
 
-        function navigateToIndex() {
-          window.location.href = 'index.html';
-      }
+  function parseCurrency(element) {
+    return parseFloat(element.textContent.replace("$", ""));
+  }
+
+  function updateGrandTotal() {
+    const sumValue = parseCurrency(sumDisplay);
+    const subTotalValue = parseCurrency(subTotal);
+    const grandTotalValue = sumValue + subTotalValue;
+    granTotal.textContent = `$${grandTotalValue.toFixed(2)}`;
+  }
+
+  updateGrandTotal();
+

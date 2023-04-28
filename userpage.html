@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="Soggywaffles_Profile_picture_filipino_man_age_28._face_slightly_958be33e-edb3-44c4-8462-d34c99dc6bf8.png" type="image/x-icon">
     <link rel="stylesheet" href="user.css" type="text/css">
   </head>
+  
   <body>
     <header class="row">
 
@@ -23,7 +24,10 @@
                       <div class="offcanvas-header">
                           
                               <div class="row">
-                                  <div class="col col-6 text-end"> <h5 class="offcanvas-title" id="offcanvasScrollingLabel">user</h5></div>
+                                  <div class="col col-6 text-end"> <h5 class="offcanvas-title" id="offcanvasScrollingLabel"> <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                  </svg></a></h5></div>
                               </div>
                               <div class="col col-6 text-end"> <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                               </div>
@@ -35,16 +39,29 @@
                       <div class="offcanvas-footer mb-5 pb-5 text-center">
                           <hr>
                       <div class="row">
-                          <div class="col col-6 text-start">Customized Cartoon</div>
-                          <div class="col col-6 text-end" >  <h3>Total: <span id="sumDisplay">0.00</span></h3></div>
+                          <div class="col col-6 text-start">Merchandise Items</div>
+                          <div class="col col-6 text-end" >  <h3>Sub Total: <span id="sumDisplay" class="amount">0.00</span></h3></div>
                           <hr>
 
                       </div>
+                      <div class="row">
+                        <div class="col col-6 text-start">Customized Cartoon</div>
+                        <div class="col col-6 text-end" >  <h3>Sub total: <span id="subTotal">0.00</span></h3></div>
+                        <hr>
+
+                    </div>
+                    <div class="row">
+                     
+                      <div class="col col-12 text-center" >  <h3>Grand Total: <span id="granTotal">0.00</span></h3></div>
+                      <hr>
+
+                  </div>
+
+
 
                       </div>  
                       <div class="row">
-                         <div class="col col-6"></div>
-                         <div class="col col-6 text-end"> <button type="button" class="btn btn-primary btn-md">Check Out</button></div>
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
 
                       </div>
           </div>
@@ -54,28 +71,30 @@
 
   <div class="row col-4">
       <div class="col col-2 ">
-          <a class="nav-link active" aria-current="page" href="#">25</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
       </div>
       <div class="col col-2" >
-          <a class="nav-link active" aria-current="page" href="#">50</a>
+          <a class="nav-link active" aria-current="page" href="#">Reviews</a>
       </div>
       <div class="col col-2">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
+          <a class="nav-link active" aria-current="page" href="#">Products</a>
       </div>
       <div class="col col-2">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
+          <a class="nav-link active" aria-current="page" href="#">FAQ</a>
       </div>
       <div class="col col-2">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
+          <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
       </div>
-      <div class="col col-2">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-      </div>
+    
   </div>
   <div class="col col-4 text-end">
-
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg></a>
      
-      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img src="" alt="Cart"></button>
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img src="icons/cart4.svg" alt="Cart" style="width: 50px;"></button>
+      
   </div>
 
   
@@ -93,10 +112,15 @@
 
         <div class="col col-sm-6 col-md-4 col-lg-2">
             <div class="card trans" style="width: 18rem;">
-                <img src="images/2521.jpg" class="card-img-top trans" alt="...">
+                <img src="pictures/shoes.png" class="card-img-top trans" alt="...">
                 <div class="card-body" style="height: 100px;">
-                  <h5 class="card-title">Custom Water Bottle</h5>
-                  <p class="card-text">This water bottle is made from high-quality stainless steel, keeping your drink cold or hot for hours on end.</p>
+                  <h5 class="card-title">Custom Designed Sneakers</h5>
+                  <p class="card-text">Leather upper with mesh lining
+                    Durable Microfiber Leather
+                    High Definition Printed Sides
+                    Hiqh Quality EVA sole
+                    Eco-friendly and 100% Vegan.
+                    </p>
                 </div>
                 <ul class="list-group  list-group-flush">
                   
@@ -106,7 +130,7 @@
                 <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
                    
-                   <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add Item</button>
+                   <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add to Cart</button>
 
                 
                 </div>
@@ -115,7 +139,7 @@
         </div>
         <div class="col col-sm-6 col-md-4 col-lg-2">
             <div class="card trans" style="width: 18rem;">
-                <img src="images/2521.jpg" class="card-img-top trans" alt="...">
+                <img src="pictures/tees.png" class="card-img-top trans" alt="...">
                 <div class="card-body" style="height: 100px;">
                   <h5 class="card-title">Custom Short Sleeved T-shirt</h5>
                   <p class="card-text">Made from high-quality cotton with a comfortable fit and durable construction, this t-shirt is perfect for everyday wear and features a stylish design that will make you stand out.</p>
@@ -134,7 +158,7 @@
         </div>
         <div class="col col-sm-6 col-md-4 col-lg-2">
             <div class="card trans" style="width: 18rem;">
-                <img src="images/2521.jpg" class="card-img-top trans" alt="...">
+                <img src="pictures/mug.png" class="card-img-top trans" alt="...">
                 <div class="card-body" style="height: 100px;">
                   <h5 class="card-title">Custom Coffee Mug</h5>
                   <p class="card-text">Crafted from high-quality ceramic, this mug is both stylish and practical, with a comfortable grip and ample capacity for your favorite hot or cold beverage.</p>
@@ -153,7 +177,7 @@
         </div>
         <div class="col col-sm-6 col-md-4 col-lg-2">
             <div class="card trans" style="width: 18rem;">
-                <img src="images/2521.jpg" class="card-img-top trans" alt="...">
+                <img src="pictures/digital.png" class="card-img-top trans" alt="...">
                 <div class="card-body" style="height: 100px;">
                   <h5 class="card-title">Premium Portrait on Canvas</h5>
                   <p class="card-text">Made from premium materials and built to last, this canvas is perfect for displaying your favorite artwork, with a smooth surface and vibrant colors that will make your piece pop.</p>
@@ -172,10 +196,10 @@
         </div>
         <div class="col col-sm-6 col-md-4 col-lg-2">
           <div class="card trans" style="width: 18rem;">
-              <img src="images/2521.jpg" class="card-img-top trans" alt="...">
+              <img src="pictures/bags.png" class="card-img-top trans" alt="...">
               <div class="card-body" style="height: 100px;">
-                <h5 class="card-title">Custom Water Bottle</h5>
-                <p class="card-text">This water bottle is made from high-quality stainless steel, keeping your drink cold or hot for hours on end.</p>
+                <h5 class="card-title">Premium Bag and Pouch</h5>
+                <p class="card-text">Made from durable leather, this hand crafted bags will give you the comfort of life.</p>
               </div>
               <ul class="list-group  list-group-flush">
                 
@@ -185,7 +209,7 @@
               <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
                  
-                 <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add Item</button>
+                 <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add to Cart</button>
 
               
               </div>
@@ -194,7 +218,7 @@
       </div>
       <div class="col col-sm-6 col-md-4 col-lg-2">
         <div class="card trans" style="width: 18rem;">
-            <img src="images/2521.jpg" class="card-img-top trans" alt="...">
+            <img src="pictures/watwerbot.png" class="card-img-top trans" alt="...">
             <div class="card-body" style="height: 100px;">
               <h5 class="card-title">Custom Water Bottle</h5>
               <p class="card-text">This water bottle is made from high-quality stainless steel, keeping your drink cold or hot for hours on end.</p>
@@ -220,7 +244,7 @@
 
         <div class="col col-sm-6 col-md-4 col-lg-2">
             <div class="card trans" style="width: 18rem;">
-                <img src="images/2521.jpg" class="card-img-top trans" alt="...">
+                <img src="pictures/phone.png" class="card-img-top trans" alt="...">
                 <div class="card-body" style="height: 100px;">
                   <h5 class="card-title">Custom Phone Case</h5>
                   <p class="card-text">Designed to protect your mobile device from scratches, drops, and other everyday hazards, this phone case is made from high-quality materials and features a sleek and stylish design that won't weigh you down.</p>
@@ -239,7 +263,7 @@
         </div>
         <div class="col col-sm-6 col-md-4 col-lg-2">
             <div class="card trans" style="width: 18rem;">
-                <img src="images/2521.jpg" class="card-img-top trans" alt="...">
+                <img src="pictures/hoodie.png" class="card-img-top trans" alt="...">
                 <div class="card-body" style="height: 100px;">
                   <h5 class="card-title">Custom Long Sleeved Hoodie</h5>
                   <p class="card-text">Crafted from soft and warm materials with a comfortable fit, this hoodie is perfect for layering and will keep you cozy and stylish all season long.</p>
@@ -258,7 +282,7 @@
         </div>
         <div class="col col-sm-6 col-md-4 col-lg-2">
             <div class="card trans" style="width: 18rem;">
-                <img src="images/2521.jpg" class="card-img-top trans" alt="...">
+                <img src="pictures/blanket.png" class="card-img-top trans" alt="...">
                 <div class="card-body" style="height: 100px;">
                   <h5 class="card-title">Premium Cotton Silk Blanket</h5>
                   <p class="card-text"> Made from plush and luxurious materials with a soft and silky feel, this blanket is perfect for snuggling up on the couch or staying warm on a chilly night.</p>
@@ -277,7 +301,7 @@
         </div>
         <div class="col col-sm-6 col-md-4 col-lg-2">
             <div class="card trans" style="width: 18rem;">
-                <img src="images/2521.jpg" class="card-img-top trans" alt="...">
+                <img src="pictures/canva4.png" class="card-img-top trans" alt="...">
                 <div class="card-body" style="height: 100px;">
                   <h5 class="card-title">Digital Portrait</h5>
                   <p class="card-text"> Created by skilled artists using state-of-the-art technology and high-quality materials, this digital portrait is a unique and timeless way to capture a special moment or memory that will last a lifetime.</p>
@@ -296,10 +320,10 @@
         </div>
         <div class="col col-sm-6 col-md-4 col-lg-2">
           <div class="card trans" style="width: 18rem;">
-              <img src="images/2521.jpg" class="card-img-top trans" alt="...">
+              <img src="pictures/canva1.png" class="card-img-top trans" alt="...">
               <div class="card-body" style="height: 100px;">
-                <h5 class="card-title">Custom Water Bottle</h5>
-                <p class="card-text">This water bottle is made from high-quality stainless steel, keeping your drink cold or hot for hours on end.</p>
+                <h5 class="card-title">12x16 Wall Canvas</h5>
+                <p class="card-text">Made from premium materials and built to last, this canvas is perfect for displaying your favorite artwork, with a smooth surface and vibrant colors that will make your piece pop.</p>
               </div>
               <ul class="list-group  list-group-flush">
                 
@@ -309,7 +333,7 @@
               <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
                  
-                 <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add Item</button>
+                 <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add to Cart</button>
 
               
               </div>
@@ -318,10 +342,10 @@
       </div>
       <div class="col col-sm-6 col-md-4 col-lg-2">
         <div class="card trans" style="width: 18rem;">
-            <img src="images/2521.jpg" class="card-img-top trans" alt="...">
+            <img src="pictures/canva2.png" class="card-img-top trans" alt="...">
             <div class="card-body" style="height: 100px;">
-              <h5 class="card-title">Custom Water Bottle</h5>
-              <p class="card-text">This water bottle is made from high-quality stainless steel, keeping your drink cold or hot for hours on end.</p>
+              <h5 class="card-title">8x10 Wall Canvas</h5>
+              <p class="card-text">Made from premium materials and built to last, this canvas is perfect for displaying your favorite artwork, with a smooth surface and vibrant colors that will make your piece pop.</p>
             </div>
             <ul class="list-group  list-group-flush">
               
@@ -331,7 +355,7 @@
             <div class="card-body d-grid gap-2 d-md-flex justify-content-md-end">
                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Check-out</button>
                
-               <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add Item</button>
+               <button class=" btn btn-primary generateNewDiv" data-price-target="closest('.card').querySelector('.p_list')">Add to Cart</button>
 
             
             </div>
@@ -341,30 +365,35 @@
     </div>
 
 </main>
-<footer>
-    <div class="container-fluid ">
+
+  <footer>
+    <div class="container-fluid " style="background-color: rgb(179, 190, 201);">
       <div class=" row px-3 justify-content-around footlong" >
        
             <div class="col text-start">
             
-              <p>fdsfdsfdsf</p>
-              <p>afdfdfaf</p>
-              <p>dfdsfdsfdfs</p>
+              <p id="faq">FAQ</p>
+              <p>Refunds</p>
+              <p>All Rights Reserved</p>
                   
             </div>
             <div class="col text-center">
             
-              <p>fdsfdsfdsf</p>
-              <p>afdfdfaf</p>
-              <p>dfdsfdsfdfs</p>
+              <p id="partner">Visit Our Other Stores</p>
+              <p><a href="">Disney Me</a></p>
+              <p><a href="">Pet Vectors</a></p>
                   
             </div>
 
             <div class="col text-end">
             
-              <p>fdsfdsfdsf</p>
-              <p>afdfdfaf</p>
-              <p>dfdsfdsfdfs</p>
+              <p id="contact">Contact Us</p>
+              <p><a href=""></a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg></p>
+              <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg></a></p>
                   
             </div>
               
@@ -375,6 +404,13 @@
     
         
     </div>
+
+ 
+    
+    
+
+  
+
 
       
       
@@ -468,9 +504,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Submit form</button>
-                </div> -->
+          
               </form>  
           </div>
           <div class="modal-footer">
@@ -609,7 +643,8 @@
             
            </div>
           <div class="modal-body text-center">
-          <img src="images/2521.jpg" alt="">
+            <h2>Payment Succesful</h2>
+          <img src="https://media.giphy.com/media/TDyxBGZcViZnoye8iN/giphy.gif" alt="">
            
 
      
@@ -655,7 +690,7 @@
               
              </div>
             <div class="modal-body text-center">
-            <img src="images/2521.jpg" alt="">
+            <img src="https://media.giphy.com/media/TDyxBGZcViZnoye8iN/giphy.gif" alt="">
               <div class="text-center">
                 <button id="minus">-</button>
                 <input type="number" id="number" value="0" />
@@ -696,6 +731,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
    
     <script src="user.js"></script>
-  
+
   </body>
 </html>

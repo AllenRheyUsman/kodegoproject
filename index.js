@@ -1,10 +1,5 @@
 // const myModal = document.getElementById('myModal')
 // const myInput = document.getElementById('myInput')
-const  fs=require("fs");
-
-
-
-
 
         //  button anchor
 function toonIn() {
@@ -58,8 +53,5 @@ for (let i = 0; i < samplemodals.length; i++) {
     maramingPicture(i);
   });
 }
-
-
-
 
 

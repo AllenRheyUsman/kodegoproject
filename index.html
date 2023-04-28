@@ -10,7 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="shortcut icon" href="Soggywaffles_Profile_picture_filipino_man_age_28._face_slightly_958be33e-edb3-44c4-8462-d34c99dc6bf8.png" type="image/x-icon">
     <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Delius+Unicase:wght@700&family=DynaPuff&family=Rancho&family=Sacramento&family=Sigmar&family=Sono&display=swap" rel="stylesheet">
   </head>
+  <style>
+    body{
+      font-family: 'Sigmar', cursive;
+    }
+  </style>
   <body>
   <header class="container-fluid head">
     <div class="row">
@@ -24,11 +32,11 @@
       <div class="col">
         <div class="row">
           <div class="col">
-            <a type="button" class="btn btn-outline-warning btn-sm" href="homepage.html">Toon me on</a>
+            <a type="button" class="btn btn-outline-warning btn-sm" href="userpage.html">Toon me on</a>
 
           </div>
           <div class="col">
-            <a type="button" class="btn btn-outline-warning btn-sm" href="homepage.html">Reviews</a>
+            <a type="button" class="btn btn-outline-warning btn-sm" href="#review">Reviews</a>
 
           </div>
           <div class="col">
@@ -36,11 +44,11 @@
 
           </div>
           <div class="col">
-            <a type="button" class="btn btn-outline-warning btn-sm" href="homepage.html">FAQ</a>
+            <a type="button" class="btn btn-outline-warning btn-sm" href="#faq">FAQ</a>
 
           </div>
           <div class="col">
-            <a type="button" class="btn btn-outline-warning btn-sm" href="homepage.html">Contact us</a>
+            <a type="button" class="btn btn-outline-warning btn-sm" href="#contact">Contact us</a>
 
           </div>
 
@@ -51,16 +59,59 @@
           
           <div>
             <div class="col">
-              <a type="button" class="btn btn-outline-warning btn-sm mx-3" href="homepage.html">log-in</a>
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Log-in
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">Log-in</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <a href="">Forgot Password?</a>
+           
+          </div>
+          <div class="mb-3 form-check">
+           
+            <a href="">Sign-up</a>
+          </div>
+          <button type="submit" class="btn btn-warning"><a href="userpage.html">Submit</a></button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+           
+</div>
+
   
             </div>
           </div>   
-          <div>
-            <a type="button" class="btn btn-primary btn-sm" href="homepage.html">
-              <img src="" alt=""><span class="rounded-pill">+99 <span class="visually-hidden">unread messages</span></span>
-            </a>
-            
-          </div>
+       
 
 
 
@@ -70,30 +121,26 @@
       </div>
       <div class="row">
         <div class="col pt-5  text-center">
-            <P class="p=pads my-0">shipping promo</P>
-            <p class="now my-0">sale call to action</p>
-            <p class="p-pads my-0">banner for my Ecommerce</p>
-           <p class="p-pads my-0">24hours customer support</p>
-            <p class="p-pads">unlimited revision</p>
+           
         </div>
         <div class=" row position-absolute running">
           <div class="col">
-            <img src="images/asia.jpg" class="popout" alt="popout image">
+            <img src="pictures/chat.png" class="popout" alt="popout image">
             
 
           </div>
           <div class="col col-sm-3 col-md-3 col-lg-3">
-            <img src="images/blade.png" class="d-flex pad" alt="this is an image">
+            <img src="pictures/customer.png" class="d-flex pad" alt="this is an image">
           </div>
       
         </div>
 
         <div class=" row position-absolute first">
           <div class="col ol-sm-3 col-md-3 col-lg-3 position-absolute tran">
-            <img src="images/asia.jpg" class="chat" alt="popout image">
+            <img src="pictures/ship.png" class="chat" alt="popout image">
           </div>
           <div class="col col-sm-3 col-md-3 col-lg-3 tran">
-            <img src="images/blade.png" class="d-flex shine neonlights" alt="this is an image">
+            <img src="pictures/cta.png" class="d-flex shine neonlights" alt="this is an image">
           </div>
       
         </div>
@@ -113,7 +160,9 @@
   
     
 
-
+<div class="row">
+  <h1 class="mt-3 text-center">Custom Made Toons</h1>
+</div>
 
 
   <main class="container-fluid my-5 ">
@@ -259,13 +308,61 @@
    <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/2521.jpg" class="d-block w-100" alt="...">
+        <img src="bg/34014CF1-CE95-44BF-909C-FC56CD158744.jpeg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="images/2521.jpg" class="d-block w-100" alt="...">
+        <img src="bg/background beach -2.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="images/2521.jpg" class="d-block w-100" alt="...">
+        <img src="bg/Christmas Simpsons.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/happy birthday simpsons.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/34014CF1-CE95-44BF-909C-FC56CD158744.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/background beach -2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/outside-house-hi-res-2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/background beach -2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/background beach1 .jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/background beach -2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/Heart Portal.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/Portal_Christmas2-1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/purple-portal.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/RAM forest bg.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/RAM-Flying-Saucer.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/RAM-Monster-World.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/background beach1 .jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/RICK_MORTY Sunset BG(1).jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="bg/Spaceship.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -316,7 +413,7 @@
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Monster World
                 </label>
@@ -325,25 +422,25 @@
 
             <div class="col">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
                 <label class="form-check-label" for="flexRadioDefault1">
                   Forest
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Christmas
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                  Purple
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Heart
                 </label>
@@ -352,25 +449,25 @@
             
             <div class="col">
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
                 <label class="form-check-label" for="flexRadioDefault1">
                   Crystal World
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault9" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Default checked radio
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault10" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Classic
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault11" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Turquoise
               </div>
@@ -393,36 +490,36 @@
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                   <label class="form-check-label" for="flexRadioDefault1">
-                    1 (5$)
+                    1
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                   <label class="form-check-label" for="flexRadioDefault2">
-                    2 (10$)
+                    2 
                   </label>
                 </div>
                
               </div>
               <div class="col">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
                   <label class="form-check-label" for="flexRadioDefault1">
-                    3(15$)
+                    3
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
                   <label class="form-check-label" for="flexRadioDefault2">
-                    4(18$)
+                    4
                   </label>
                 </div>
               </div>
               <div class="col">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
                   <label class="form-check-label" for="flexRadioDefault1">
-                    5 (20$)
+                    5 
                   </label>
                 </div>
              
@@ -438,7 +535,7 @@
 
         <div class="col input-group">
         <p>for 6 heads and above please type in the number of heads</p>
-        <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+        <input type="number" class="form-control sixHeads" aria-label="Dollar amount (with dot and two decimal places)">
         <span class="input-group-text">$</span>
         <span class="input-group-text">0.00</span>
       </div>
@@ -465,7 +562,7 @@
     <div class="row justify-content-center my-3">
  
       <h4 class="my-2">total</h4>
-      <p class="my-2">dffdsfdsf</p>
+      <p class="my-2 inputTotal">dffdsfdsf</p>
       <div class="d-grid gap-2 col-6 justify-content-center">
       <button type="button" class="btn  btn-warning tocart my-3 d-inline-flex focus-ring  text-decoration-none border rounded-2 text-center justify-content-center pt-1 trans">Add to cart</button>
       <button type="button" onclick="toonIn()" class="btn  btn-primary toon-in tuna my-3 d-inline-flex focus-ring  text-decoration-none border rounded-2 text-center justify-content-center pt-4 trans">Toon In</button>
@@ -578,24 +675,28 @@
        
             <div class="col text-start">
             
-              <p>fdsfdsfdsf</p>
-              <p>afdfdfaf</p>
-              <p>dfdsfdsfdfs</p>
+              <p id="faq">FAQ</p>
+              <p>Refunds</p>
+              <p>All Rights Reserved</p>
                   
             </div>
             <div class="col text-center">
             
-              <p>fdsfdsfdsf</p>
-              <p>afdfdfaf</p>
-              <p>dfdsfdsfdfs</p>
+              <p id="partner">Visit Our Other Stores</p>
+              <p><a href="">Disney Me</a></p>
+              <p><a href="">Pet Vectors</a></p>
                   
             </div>
 
             <div class="col text-end">
             
-              <p>fdsfdsfdsf</p>
-              <p>afdfdfaf</p>
-              <p>dfdsfdsfdfs</p>
+              <p id="contact">Contact Us</p>
+              <p><a href=""></a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg></p>
+              <p><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg></a></p>
                   
             </div>
               
@@ -607,8 +708,7 @@
         
     </div>
 
-      
-      
+ 
     
     
 
@@ -682,9 +782,53 @@
 </div>
 
 
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
    
     <script src="index.js"></script>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get elements
+    const radios = document.querySelectorAll('input[type="radio"][name="flexRadioDefault"]');
+    const sixHeadsInput = document.querySelector(".sixHeads");
+    const inputTotal = document.querySelector(".inputTotal");
+
+    // Update total based on radio buttons
+    radios.forEach(radio => {
+      radio.addEventListener("change", function () {
+        if (radio.checked) {
+          const radioValue = parseInt(radio.nextElementSibling.textContent.match(/\d+/)[0]);
+          const result = radioValue * 5;
+          inputTotal.textContent = `${result}$`;
+        }
+      });
+    });
+
+
+
+    // Update total based on input for 6 heads and above
+    sixHeadsInput.addEventListener("input", function () {
+      const inputValue = parseInt(sixHeadsInput.value);
+      if (inputValue > 0) {
+        const total = 20 + inputValue * 3;
+        inputTotal.textContent = `${total}$`;
+        radios.forEach(radio => radio.checked = false); // Uncheck all radio buttons
+      } else {
+        const selectedRadio = document.querySelector('input[type="radio"][name="flexRadioDefault"]:checked');
+        if (selectedRadio) {
+          inputTotal.textContent = `${selectedRadio.nextElementSibling.textContent.match(/\d+/)[0]}$`;
+        } else {
+          inputTotal.textContent = "";
+        }
+      }
+    });
+  });
+</script>
+
   
   </body>
 </html>
